@@ -68,7 +68,7 @@ function LED1_Off(){
   // called when a message arrives
   function onMessageArrived(message) {
     console.log("Nuevo mensaje:"+message.payloadString);
-    document.getElementById("sensor").innerHTML=message.payloadString.split("=")[1];
-  }
+    document.getElementById("sensor").innerHTML=message.payloadString;
   
+ }
   
